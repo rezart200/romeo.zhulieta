@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romeo & Zhulieta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url(images/976bc7c9ebb0f05e7f36bf2efc9cea11.jpg); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            position: relative;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .hero p {
+            position: relative;
+            text-align: center;
+            color: rgb(134, 105, 161);
+            font-size: 20px;
+            font-weight: 400;
+            margin: 20px 0;
+            z-index: 1;
+        }
+        .button {
+         display: inline-block;
+         padding: 12px 24px;
+         background-color: #FF8000;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-weight: 500;
+         text-decoration: none;
+         position: relative;
+         z-index: 2;
+        }
+        .button:hover {
+         transform: scale(1.05);
+         transition: transform 0.3s ease-in-out;
+         background-color: #e47404;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .signature-img {
+         width: 150px;
+         display: block;
+         position: fixed;
+         bottom: -35px;
+         right: 10px;
+         opacity: 0.8;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .dropdown-content a {
+            color: #ffffff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover {
+            background-color: #FF8000;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        nav a:hover {
+            color: #FF8000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            transform: scale(1.05);
+        }
+        .dropdown > a {
+        display: inline-block;
+        transition: transform 0.3s ease-in-out, color 0.3s ease;
+       }
+        .dropdown > a:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+        color: #FF8000;
+       }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Letersi "Elez Isuf Ndreu"</h1>
+    <nav>
+        <a href="rikrijuesit.html">Rikrijuesit</a>
+        <div class="dropdown">
+            <a href="#">Blogeret</a>
+            <div class="dropdown-content">
+                <a href="https://www.instagram.com/juliet_.c1/?igsh=bjR5cXc2dmY1NHJh&utm_source=qr#">Instagram Zhulieta</a>
+                <a href="https://www.instagram.com/therealromeo_m?igsh=MWJyb3pqNXdjbmkzcQ%3D%3D&utm_source=qr">Instagram Romeo</a>          
+            </div>
+        </div>
+        <a href="Korrespondentet.html">Korrespondentet</a>
+        <a href="dizanjuesit.html">Disanjuesit e fjales</a>
+        <a href="aktrimi.html">Aktrimi</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="guidjeret.html">Guidjeret</a>
+        <a href="motivuesit.html">Motivuesit</a>
+        <a href="ekspozita.html">Ekspozita</a>
+    </nav>
+
+</header>
+
+<div class="hero">
+    <h2>Romeo & Zhulieta</h2>
+    <p>Projekti i letersise per Romeo & Zhulieten</p>
+    <a href="https://gjergjpekmezilibrary.wordpress.com/wp-content/uploads/2015/03/romeo-dhe-xhuliela.pdf" class="button">Libri</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 GRUPI I PROJEKTIT TE LETERSISE.</p>
+    <img src="images/letter-rs-signature-logo-template-vector-33124448-removebg-preview.png" alt="Firma" class="signature-img">
+</footer>
+
+</body>
+</html>
